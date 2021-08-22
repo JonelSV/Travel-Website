@@ -25,3 +25,19 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    background-color: var
+    (--secondary-color);
+    margin: 3.5 rem;
+    box-shadow: 0 1rem 3rem var(--grey-color);
+   
+}
+
+.header {
+    width:100%;
+    height: calc(100vh - 7rem);
+    background: linear-gradient(rgba(18,113,255,.5), rgba(18,113,255, .3)),
+    url(assets/images/header-bg.jpg) center no-repeat;
+    background-size: cover;
+}
