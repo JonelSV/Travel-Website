@@ -70,7 +70,8 @@ html {
     background-color: rgba(255,255,255, 0.7);
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -100%;
+    opacity: 0;
     z-index: 300;
     padding: 3.5rem 5.5rem 3.5rem 3.5rem;
 }
@@ -115,9 +116,15 @@ html {
     text-transform: uppercase;
     width: 100%;
     opacity: .8;
+    position: relative;
+    top: -100%;
+    transition: all .3s;
 }
 
-
+.nav-link:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
 
 /* End of Navbar */
 
