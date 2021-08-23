@@ -74,6 +74,13 @@ html {
     opacity: 0;
     z-index: 300;
     padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+    transition: bottom .5s, opacity .2s;
+}
+
+.change .navbar-wrapper {
+    bottom: 0;
+    opacity: 1;
+    transition: bottom .5s, opacity .2s 0.25s;
 }
 
 .navbar {
@@ -83,6 +90,7 @@ html {
     url(assets/images/navbar-bg.jpg) center no-repeat;
     background-size: cover;
     position: relative;
+    overflow-y: hidden;
 }
 
 .close-navbar-icon {
@@ -121,11 +129,30 @@ html {
     transition: all .3s;
 }
 
+.change .nav-link {
+    top: 0;
+}
+
 .nav-link:hover {
     opacity: 1;
     color: var(--primary-color);
 }
 
+.change .nav-link:nth-child(1) {
+    transition: top 1s .4s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(2) {
+    transition: top 1s .6s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(3) {
+    transition: top 1s .8s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(4) {
+    transition: top 1s 1s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(5) {
+    transition: top 1s 1.2s, opacity .3s, color .3s;
+}
 /* End of Navbar */
 
 /* Header */
