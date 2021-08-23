@@ -8,12 +8,15 @@
       href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
       rel="stylesheet"/>
     <title>Travel Agency Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <div class="container">
-        
-        <header class="header" center>
+        <header class="header center">
             <div class="header-text">
                 <h1 class="heading">Around the World</h1>
                     <p class="header-paragraph">Traveling - 
@@ -28,17 +31,46 @@
             />  
              <div class="logo">
                  <h1>
-                     <span>T</span>
-                     <span>H</span>
-                     <span>E</span>
-                     <span>R</span>
-                     <span>O</span>
-                     <span>A</span>
-                     <span>D</span>
+                     <span class="center">T</span>
+                     <span class="center">H</span>
+                     <span class="center">E</span>
+                     <span class="center">R</span>
+                     <span class="center">O</span>
+                     <span class="center">A</span>
+                     <span class="center">D</span>
                  </h1>
              </div>
         </header>
-    </div>
+
+   <section class="popular-tours">
+        <h1 class="popular-tours-heading">The most popular tours</h1>
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="front-side">
+                    <img src="assets/images/forest.jpg" alt="Forest" class="card-image"/>
+                    <h1 class="tour-name">The Wild Forest</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item">7 days tour</li>
+                        <li class="card-list-item">Up to 20 people</li>
+                        <li class="card-list-item">4 tour guides</li>
+                        <li class="card-list-item">Sleep in private tents</li>
+                        <li class="card-list-item">Difficulty: Medium</li>
+                    </ul>
+                    <button class="navigation-button">
+                        price &gt;&gt;
+                    </button>
+                </div>
+                <div class="back-side"> 
+                    <button class="navigation-button">
+                        &lt;&lt; back
+                    </button>
+                    <h3 class="tour-price">$399</h3>
+                    <button class="card-button">Booking</button>
+                </div>
+            </div>
+        </div>
+   </section>
+
     <script src="app.js"></script>
 </body>
 </html>
