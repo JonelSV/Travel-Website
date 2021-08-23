@@ -38,6 +38,36 @@ html {
 }
 /* End of General Styling */
 
+/* Navbar */
+.navbar-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    cursor: pointer;
+    flex-direction: column;
+}
+.open-navbar-icon {
+    position: fixed;
+    top: 6.5rem;
+    left: 6.5rem;
+    z-index: 200;
+}
+
+.navbar-icon .line {
+    height: .2rem;  
+    width: 3.5rem;
+    background-color: var(--light-grey-color);
+}
+
+.navbar-wrapper {
+    display: none;
+}
+
+
+
+/* End of Navbar */
+
 /* Header */
 
 .header {
