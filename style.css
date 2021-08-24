@@ -530,15 +530,18 @@ html {
     .heading {
         font-size: 6rem;
     }
+
     .header-paragraph {
         font-size: 2.5rem;
     }
     .popular-tours-heading {
         font-size: 6rem;
     }
+
     .story-bg {
         transform: skewX(0);
     }
+
     .story {
         transform: skewX(0);
         flex-direction: column;
@@ -548,12 +551,78 @@ html {
     .story-image {
         margin-bottom: 3rem;
     }
+
+    .footer-link {
+        padding: .3rem 2rem;
+        margin: 0 1rem;
+    }
 }
+
+@media (max-width: 800px) {
+    .header-paragraph {
+        display: none;
+    }
+
+    .popular-tours-heading {
+        font-size: 5rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-link {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        margin: 0;
+    }
+    .open-navbar-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+    .navbar-wrapper {
+        padding: 0;
+    }
+
+    .close-navbar-icon {
+        right: 4rem;
+    }
+    .header {
+        height: 100vh
+    }
+    .contact-heading {
+        font-size: 6rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+        height: 40rem;
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+
+
 /* End of Stories */
 
 /* Contact Section */
 .contact {
-    padding: 15rem;
+    padding: 15rem 0 20rem 0;
     text-align: center;
     background: url("assets/images/contact-us-bg.png") center no-repeat;
     background-size: cover;
@@ -571,8 +640,8 @@ html {
 }
 
 .contact-form {
-    width: 70rem;
-    height: 50rem;
+    width: 60rem;
+    height: 40rem;
     background-color: rgba(255,255,255, 0.95);
     margin: auto;
     flex-direction: column;
